@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.header {
+    background-color: #F5F5F5;
+    padding-inline: 16px;
+}
+
+.nav {
+    max-width: 1280px;
+    height: 100px;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-list a {
+    font-size: 18px;
+    color: #292929;
+    padding-block: 16px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 125px;
+}
+
+.text h1 {
+    font-size: 64px;
+    margin-left: 75px;
+    
+    color: #292929;
+}
+
+h1 span {
+    color: #4B9BE4;
+}
+
+img.perfil_home {
+    height: 250px;
+    margin-right: 166px;
+}
+
+.curriculo {
+    margin: 74px 0 134px 143px;
+}
+
+.curriculo .btn {
+    border: 1px solid #3498db;
+    color: #F5F5F5;
+    background: none;
+
+    min-width: 200px;
+
+    padding: 10px 20px;
+    margin: 10px;
+
+    border-radius: 12px;
+
+    font-size: 20px;
+
+    cursor: pointer;
+    
+    transition: 0.4s;
+
+    position: relative;
+}
+
+.btn1:hover {
+    color: #3498db;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    border-radius: 10px;
+
+    width: 100%;
+    height: 100%;
+
+    background: #3498db;    
+
+    z-index: -1;
+
+    transition: transform 0.5s;
+}
+
+
+.btn1:hover::before {
+    transform: scaleX(0);
+}
+
+
