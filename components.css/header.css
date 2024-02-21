@@ -4,16 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
 a {
     font-family: sans-serif;
     text-decoration: none;
 }
-
-.header {
-    background-color: #F5F5F5;
-    padding-inline: 16px;
-}
-
 .nav {
     max-width: 1280px;
     height: 100px;
@@ -34,6 +32,10 @@ a {
     font-size: 18px;
     color: #292929;
     padding-block: 16px;
+}
+
+.nav-list a:hover {
+    color: #31a7f7;
 }
 
 .hero {
@@ -113,4 +115,85 @@ img.perfil_home {
     transform: scaleX(0);
 }
 
+.wrapper {
+   display: flex;
+   margin: 0 150px 50px;    
+}
 
+.wrapper .button {
+    display: inline-block;
+    gap: 50px;
+
+    height: 60px;
+    width: 60px;
+    
+    margin: 0 20px;
+    
+    overflow: hidden;
+    
+    background: #F5F5F5;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+
+    border-radius: 50px;
+    
+    cursor: pointer;    
+   
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+    width: 200px;
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+
+
+.wrapper .button:nth-child(1):hover .icon {
+    background: #0c0c0c;
+    color: #F5F5F5;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+    background: #3498db;
+}
+
+.wrapper .button .icon i {
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.wrapper .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+h2 {
+    position: relative;
+    font-size: 15em;
+    color: #222;
+    background: linear-gradient(90deg, #0f0, #1899ff, #f0f, #f00, #ff0);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: .02em transparent;
+}
+
+h2::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    color: #222;
+    background: linear-gradient(90deg, #0f0, #1899ff, #f0f, #f00, #ff0);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: .02em transparent;
+    transform: translate(-20px, -20px);
+
+}
