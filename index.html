@@ -4,23 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
+
     <link rel="stylesheet" href="./components.css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <script defer src="./header.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
     <header class="header">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
         <nav class="nav">
-            <a href="" class="logo">a</a>
+            <a href="" class="logo">#</a>
             <ul class="nav-list">
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#project">Projetos</a></li>
                 <li><a href="#">Testemunhas</a></li>
                 <li><a href="#contact">Contato</a></li>
+                <div class="wrapper-menu">
+                    <div class="button-menu">
+                        <a href="https://github.com/Guilherme1Souza?tab=repositories" target="_blank">
+                            <div class="icon-git"><i class="fa-brands fa-square-github"></i></div>
+                        </a>
+                    </div>
+                    <div class="button-menu">
+                        <a href="https://www.linkedin.com/in/guilhermeeduardo?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bds%2FhYER1Ro6omlhpxBsBlA%3D%3D"
+                            target="_blank">
+                            <div class="icon-linkedin"><i class="fab fa-linkedin"></i></div>
+                        </a>
+                    </div>
+                    <div class="button-menu">
+                        <a href="mailto:seu-guilhermeeduardo2016@outlook.com"
+                            target="_blank">
+                            <div class="icon-outlook"><i class="fa-regular fa-envelope-open"></i></div>
+                        </a>
+                    </div>
+                </div>
             </ul>
         </nav>
     </header>
@@ -37,16 +62,22 @@
 
         <section class="social-media">
             <div class="curriculo">
-                <button class="btn btn1">Download CV</button>
+                <a href="" class="btn">Download CV<span><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
             </div>
             <div class="wrapper">
                 <div class="button">
-                    <div class="icon"><i class="fa-brands fa-square-github"></i></div>
-                    <span>Git hub</span>
+                    <a href="https://github.com/Guilherme1Souza?tab=repositories" target="_blank">
+                        <div class="icon"><i class="fa-brands fa-square-github"></i></div>
+                        <span>Git hub</span>
+                    </a>
                 </div>
                 <div class="button">
-                    <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
-                    <span>Linkedin</span>
+                    <a href="https://www.linkedin.com/in/guilhermeeduardo?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bds%2FhYER1Ro6omlhpxBsBlA%3D%3D"
+                        target="_blank">
+                        <div class="icon"><i class="fab fa-linkedin"></i></div>
+                        <span>Linkedin</span>
+                    </a>
                 </div>
             </div>
         </section>
